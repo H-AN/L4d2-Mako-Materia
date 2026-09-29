@@ -137,7 +137,7 @@ public void OnPluginStart()
 	RegAdminCmd("sm_mako_debug", Cmd_Debug, ADMFLAG_ROOT, "打印魔石状态");
 
 	ResetState();
-	CreateTimer(0.1, Timer_Poll, _, TIMER_REPEAT);
+	CreateTimer(0.5, Timer_Poll, _, TIMER_REPEAT);
 }
 
 public void OnPluginEnd()
